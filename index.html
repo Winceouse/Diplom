@@ -16,10 +16,13 @@
 <body>
     <div class="header-Contact-Wrapper">
         <div>
+            <span class="headerLogo"><a href="index.html">LINDVIOR</a></span>
+        </div>
+        <div>
             <ul class="header-Contact-List">
                 <li><i class="fa fa-phone"></i><a href="tel:+380506666666">+380506666666</a></li>
                 <li><i class="fa fa-phone"></i><a href="tel:+380676666666">+380676666666</a></li>
-                <li><i class="fa fa-envelope"></i><a href="mailto:LawHelp@gmail.com">LawHelp@gmail.com</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:******@*****.com">******@*****.com</a></li>
                 <li><i class="fa fa-map-marker"></i><a target="_blank"
                         href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9A%D1%80%D0%B5%D1%89%D0%B0%D1%82%D0%B8%D0%BA,+23,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4450986,30.5213227,19.33z/data=!4m6!3m5!1s0x40d4ce567fa9b447:0xd4aa95b999552fae!8m2!3d50.445107!4d30.522072!16s%2Fg%2F11c5d8m924?hl=ua">м.Київ,
                         вул. Хрещатик,23</a></li>
@@ -34,7 +37,7 @@
         </div>
     </div>
     <header>
-        <span class="logo" >LINDVIOR</span>
+        <span class="logo">LINDVIOR</span>
         <nav class="header-Nav-Menu">
             <a href="">Новини</a>
             <a href="">Контакти</a>
@@ -59,18 +62,21 @@
                 <h3>Наші найкращі справи</h3>
                 <div class="Main-Achives-card-Wrapper">
                     <div class="Main-Achives-card">
-                        <h4>Приват банк</h4>
-                        <p>Скасування рішення про стягнення з поручителя заборгованості за кредитним договором на користь Банку на суму</p>
+                        <h4>***** банк</h4>
+                        <p>Скасування рішення про стягнення з поручителя заборгованості за кредитним договором на
+                            користь Банку на суму</p>
                         <div>1 488 000 UAH</div>
                     </div>
                     <div class="Main-Achives-card">
-                        <h4>Sense банк</h4>
-                        <p>В судовому порядку визнання виконавчого напису нотаріуса таким, що не підлягає виконанню на суму</p>
+                        <h4>***** банк</h4>
+                        <p>В судовому порядку визнання виконавчого напису нотаріуса таким, що не підлягає виконанню на
+                            суму</p>
                         <div>500 000 UAH</div>
                     </div>
                     <div class="Main-Achives-card">
-                        <h4>Дельта банк</h4>
-                        <p>Захистили інтереси позичальника на стадії виконавчого провадження у справі про стягнення заборгованості по кредиту на суму</p>
+                        <h4>***** банк</h4>
+                        <p>Захистили інтереси позичальника на стадії виконавчого провадження у справі про стягнення
+                            заборгованості по кредиту на суму</p>
                         <div>2 500 000 UAH</div>
                     </div>
                     <div class="Main-Achives-card">
@@ -80,7 +86,8 @@
                     </div>
                     <div class="Main-Achives-card">
                         <h4>Захист підсудного</h4>
-                        <p>Захист підсудного у справі де його було звинувачено у 6 кримінальних правопорушеннях, які він не вчиняв, і відшкодування моральної шкоди на суму</p>
+                        <p>Захист підсудного у справі де його було звинувачено у 6 кримінальних правопорушеннях, які він
+                            не вчиняв, і відшкодування моральної шкоди на суму</p>
                         <div>1 000 000 UAH</div>
                     </div>
                 </div>
@@ -89,28 +96,67 @@
                 <h3>Запишіться прямо зараз</h3>
                 <div class="Main-Appointment-form">
                     <div>
-                        <p>Запишість на консультацію прямо зараз. Залиште ваший номер телефону, і з вами зв'яжуться наші фахівці.</p>
+                        <p>Запишість на консультацію прямо зараз. Залиште ваший номер телефону, і з вами зв'яжуться наші
+                            фахівці.</p>
                     </div>
                     <button class="Main-Appointment-Button" id="appointmentButton">Записатися на консультацію</button>
                 </div>
                 <div class="popup">
                     <div class="popup-content">
                         <div class="popup-close-wrapper">
-                            <button class="popup-close" id="popupClose"><i class="fa-solid fa-circle-xmark"></i></button>
+                            <button class="popup-close" id="popupClose"><i
+                                    class="fa-solid fa-circle-xmark"></i></button>
                         </div>
-                        <form class="popup-content-Wrapper" method="post" action="/php/mail.php">
+                        <form method="post" action="mail.php" class="popup-content-Wrapper" enctype="application/x-www-form-urlencoded" >
                             <h2>Зв'язатися з нами</h2>
                             <input type="text" id="name" name="name" placeholder="Ваше Ім'я" required>
                             <input type="tel" id="tel" name="telephone" placeholder="Ваший телефон" required>
                             <input type="email" id="email" name="email" placeholder="Ваший email" required>
-                            <textarea placeholder="Опис вашої ситуації" id="message" name="message" maxlength="300"></textarea>
-                            <button type="submit" class="Main-Appointment-Button" id="submitBtn"><a href="/html/FeedBack.html">Відправити</a></button>
+                            <textarea placeholder="Опис вашої ситуації" id="message" name="message"
+                                maxlength="300"></textarea>
+                            <input type="submit" class="Main-Appointment-Button" id="submitBtn" value="Відправити">
                         </form>
                     </div>
                 </div>
             </article>
+            <article class="Workers">
+                <h3>Наші фахівці</h3>
+                <div class="workers-Wrapper">
+                    <div class="workers-card">
+                        <div class="workers-card-avatar"><img src="media/lawyer1.png"></div>
+                        <h4>Тайлер Дерден</h4>
+                        <h5>Засновник</h5>
+                        <p>Адвокат, керуючий партнер Юридичної компанії "Lindvior". Починаючи з 2000 року набув
+                            великий юридичний досвід на ключових позиціях бізнес структур та державному секторі в галузі
+                            фінансів та права.</p>
+                    </div>
+                    <div class="workers-card">
+                        <div class="workers-card-avatar"><img src="media/lawyer2.png"></div>
+                        <h4>Тайлер Дерден</h4>
+                        <h5>Засновник</h5>
+                        <p>Адвокат, керуючий партнер Юридичної компанії "Lindvior". Починаючи з 2000 року набув
+                            великий юридичний досвід на ключових позиціях бізнес структур та державному секторі в галузі
+                            фінансів та права.</p>
+                    </div>
+                    <div class="workers-card">
+                        <div class="workers-card-avatar"><img src="media/lawyer1.png"></div>
+                        <h4>Тайлер Дерден</h4>
+                        <h5>Засновник</h5>
+                        <p>Адвокат, керуючий партнер Юридичної компанії "Lindvior". Починаючи з 2000 року набув
+                            великий юридичний досвід на ключових позиціях бізнес структур та державному секторі в галузі
+                            фінансів та права.</p>
+                    </div>
+                    <div class="workers-card">
+                        <div class="workers-card-avatar"><img src="media/lawyer2.png"></div>
+                        <h4>Тайлер Дерден</h4>
+                        <h5>Засновник</h5>
+                        <p>Адвокат, керуючий партнер Юридичної компанії "Lindvior". Починаючи з 2000 року набув
+                            великий юридичний досвід на ключових позиціях бізнес структур та державному секторі в галузі
+                            фінансів та права.</p>
+                    </div>
+                </div>
+            </article>
         </section>
-    
     </main>
     <footer>
 
