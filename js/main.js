@@ -19,11 +19,9 @@ function closeFBForm() {
     const FBForm = document.querySelector('.popup');
     FBForm.style.display = "none";
 }
-function reDirect(){
-    location.href= "/html/FeedBack.html";
-}
+
 feedBackButton.addEventListener("click",showFBForm);
 popupClose.addEventListener("click",closeFBForm);
-submitBtn.addEventListener("click",changeAperanceOfButton1);
+
 submitBtn.addEventListener("mouseover",changeAperanceOfButton1);
 submitBtn.addEventListener("mouseout",changeAperanceOfButton2);

@@ -107,14 +107,16 @@
                             <button class="popup-close" id="popupClose"><i
                                     class="fa-solid fa-circle-xmark"></i></button>
                         </div>
-                        <form method="post" action="mail.php" class="popup-content-Wrapper" enctype="application/x-www-form-urlencoded" >
+                        <form method="post" action="https://formsubmit.co/deasmond228@gmail.com" class="popup-content-Wrapper" enctype="application/x-www-form-urlencoded" >
                             <h2>Зв'язатися з нами</h2>
+                            <input type="hidden" name="_next" value="http://localhost:5500/html/FeedBack.html">
+                            <input type="hidden" name="_captcha" value="false">
                             <input type="text" id="name" name="name" placeholder="Ваше Ім'я" required>
                             <input type="tel" id="tel" name="telephone" placeholder="Ваший телефон" required>
                             <input type="email" id="email" name="email" placeholder="Ваший email" required>
                             <textarea placeholder="Опис вашої ситуації" id="message" name="message"
                                 maxlength="300"></textarea>
-                            <input type="submit" class="Main-Appointment-Button" id="submitBtn" value="Відправити">
+                            <button type="submit" class="Main-Appointment-Button" id="submitBtn" >Відправити</button>
                         </form>
                     </div>
                 </div>
