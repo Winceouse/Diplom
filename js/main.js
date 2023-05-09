@@ -25,3 +25,13 @@ popupClose.addEventListener("click",closeFBForm);
 
 submitBtn.addEventListener("mouseover",changeAperanceOfButton1);
 submitBtn.addEventListener("mouseout",changeAperanceOfButton2);
+
+let number = 10;
+let sentense = "Some words";
+let truth = true;
+
+console.log(typeof(number));
+
+console.log(typeof(sentense));
+
+console.log(typeof(truth));

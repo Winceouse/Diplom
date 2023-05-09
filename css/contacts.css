@@ -7,10 +7,58 @@ a{
     letter-spacing: 4px;
 }
 .list-head{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
 }
 
 .contacts-wrapper{
     display: flex;
     justify-content: space-evenly;
+}
+.mapFrame{
+    width: 50vw;
+    height: 60vh;
+}
+.header{
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    
+    .contacts-wrapper{
+        flex-direction: column;
+    }
+    .mapFrame{
+        width: 100vw;
+        height: 50vh;
+    }
+    .Main-Appointment-Wrapper h3{
+        font-size: 1.2rem;
+    }
+    .contacts-list{
+        list-style: none;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+    }
+    .list-head{
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 1541px) {
+
+    .Main-Appointment-Wrapper h3{
+        font-size: 1.2rem;
+    }
+    .contacts-list{
+        list-style: none;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+    }
+    .list-head{
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+    }
 }
