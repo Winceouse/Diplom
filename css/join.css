@@ -1,0 +1,97 @@
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 2rem;
+}
+.contentSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.contentSection p, ul{
+    max-width: 60%;
+}
+.contentSection h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+.benefits span:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 1rem;
+}
+.benefits span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.benefits{
+    list-style:square;
+}
+.benefits li{
+    margin: 1rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .contentWrapper{
+        margin: 0;
+        padding: 1rem;
+        text-align:center;
+    }
+    .contentSection h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        border-bottom: 3px solid #000;
+    }
+    .contentSection {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0;
+    }
+    .benefits span:nth-child(2){
+        font-size: 1rem;
+        margin-left: 0;
+        padding-top: 4px;
+        font-style: normal;
+    }
+    .benefits span{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .contentSection h2::before,
+    .contentSection h2::after{
+        display: none;
+    }
+    .benefits li{
+        display: flex;
+        flex-direction: column;
+    }
+    .benefits{
+        padding-left: 0;
+    }
+} 
+    
+}
+@media only screen and (max-width: 1541px) {
+    .contentSection h2::before,
+    .contentSection h2::after {
+        width: 5%;
+    }
+    .contentSection h2 {
+        font-size: 1.5rem; /* Зменшений розмір заголовка */
+        width: 100%;
+    }
+    .contentSection {
+        font-size: 1.2rem; /* Зменшений розмір тексту */
+        max-width: 90%; /* Збільшуємо ширину до 90% екрану */
+    }
+}

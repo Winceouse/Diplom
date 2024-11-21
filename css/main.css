@@ -23,7 +23,8 @@ body {
 
 }
 
-.logo a:visited {
+.logo a:visited,
+.logo a {
     color: #000;
 }
 
@@ -68,7 +69,7 @@ hr {
 
 .header-Contact-Wrapper {
     display: flex;
-    width: 100%55555555555555555555;
+    max-width: 100%;
     align-items: center;
     justify-content: space-evenly;
     color: #000;
@@ -81,6 +82,7 @@ hr {
 
 .header-Contact-List {
     list-style: none;
+    max-width: 100%;
     border-right: 3px solid #000;
     border-left: 3px solid #000;
     padding-left: 1.5rem;
@@ -110,6 +112,16 @@ hr {
 
 .header-Social-List {
     list-style: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+.header-Social-Wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
 }
 
 .header-Social-List li {
@@ -150,9 +162,14 @@ hr {
     justify-content: center;
     align-items: center;
 }
-
+article h3{
+    text-align: center;
+    width: 100%;
+}
 article h3::before,
 article h3::after,
+.contentSection h2::before,
+.contentSection h2::after,
 .header-Nav-Menu::before,
 .header-Nav-Menu::after,
 .Main-Appointment-Wrapper h3::before,
@@ -160,11 +177,14 @@ article h3::after,
     display: inline-block;
     content: "";
     border-top: .2rem solid #000;
-    width: 10rem;
+    width: 30%; 
+    max-width: 150px; 
     margin: 0 1rem;
-
 }
-
+.Main-Appointment-Wrapper h3{
+    text-align: center;
+    width: 100%;
+}
 .workers-card h4::before,
 .workers-card h4::after,
 .workers-card h5::before,
@@ -457,12 +477,41 @@ h3 {
     align-items: center;
 }
 
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    z-index: 100;
+    padding: 10px 15px;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 1541px) {
+
 
     h1 {
         font-size: 1.5rem;
     }
-
+    .Main-Appointment-form {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
     body {
         width: 100%;
         padding: 0;
@@ -471,10 +520,11 @@ h3 {
 
     .header-Nav-Menu {
         padding: 1rem;
+        max-width: 100%;
     }
 
     .header-Nav-Menu a {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .header-Contact-Wrapper {
@@ -482,7 +532,7 @@ h3 {
         font-size: 1rem;
         padding: 1rem;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         position: sticky;
         text-align: center;
     }
@@ -504,17 +554,25 @@ h3 {
     }
 
     article h3::before,
-    article h3::after,
-    .Main-Appointment-Wrapper h3::before,
-    .Main-Appointment-Wrapper h3::after {
-        display: inline-block;
-        content: "";
-        border-top: .2rem solid #000;
-        width: 3rem;
-        margin: 0 1rem;
-
+article h3::after,
+.contentSection h2::before,
+.contentSection h2::after,
+.header-Nav-Menu::before,
+.header-Nav-Menu::after,
+.Main-Appointment-Wrapper h3::before,
+.Main-Appointment-Wrapper h3::after {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #000;
+    width: 30%; 
+    max-width: 50px; 
+    margin: 0 1rem;
+}
+    .Main-Appointment-Wrapper h3{
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
     }
-
     .Main-Achives-card-Wrapper {
         flex-direction: column;
     }
@@ -564,15 +622,25 @@ h3 {
         width: 30%;
     }
 }
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 750px) {
+    body {
+        width: 100%;
+        padding: 0;
+        font-size: medium;
+    }
+    .header-Social-Wrapper{
+        flex-direction: column;
+    }
     .Main-Achives-cardsDel1, .Main-Achives-cardsDel3, .Main-Achives-cardsDel2{
         flex-direction: column;
     }
     .logo {
         display: none;
     }
-
+    .header-Nav-Menu::before,
+.header-Nav-Menu::after{
+    display: none;
+}
     h1 {
         font-size: 1.5rem;
     }
@@ -590,7 +658,7 @@ h3 {
     }
 
     .header-Nav-Menu a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .header-Contact-Wrapper {
@@ -601,13 +669,7 @@ h3 {
         justify-content: space-evenly;
         position: relative;
         text-align: center;
-    }
-
-    .Main-Appointment-form {
-        width: 100%;
-        text-align: center;
         align-items: center;
-        flex-direction: column;
     }
 
     .Main-Appointment-form p {
@@ -624,14 +686,14 @@ h3 {
     article h3::after,
     .Main-Appointment-Wrapper h3::before,
     .Main-Appointment-Wrapper h3::after {
-        display: inline-block;
-        content: "";
-        border-top: .2rem solid #000;
-        width: 3rem;
-        margin: 0 1rem;
-
+        display: none;
     }
-
+    .Main-Appointment-Wrapper h3{
+        font-size: 1.2rem;
+        width: 70%;
+        text-align: center;
+        border-bottom: 3px solid #000;
+    }
     .Main-Achives-card-Wrapper {
         flex-direction: column;
     }
@@ -695,9 +757,14 @@ h3 {
     .footer-wrapper-follow {
         width: 100%;
     }
+    #backToTop {
+       
+        bottom: 20px;
+        left: 10px;
+        z-index: 100;
+        font-size: 15px;
+    }
 }
-
-
 
 
 @media only screen and (min-width: 1140px) {
